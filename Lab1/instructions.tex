@@ -26,6 +26,7 @@
 \usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
 \usepackage[margin=0.7in]{geometry}
 \usepackage{pdflscape}
+\usepackage{changepage}
 
 
 
@@ -422,7 +423,7 @@ To fully define the model of the power system we are provided with seven tables:
 \begin{table}[b]
 \caption{Transformer Data}
 \centering
-
+\begin{adjustwidth}{-0.8cm}{}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline &&&&&&&&&&&&&&&\\[-1em]
 \textbf{\begin{tabular}[c]{@{}c@{}}From\\ Bus\\ No.\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}To\\ Bus\\ No.\end{tabular}} & \textbf{ID} & \textbf{\begin{tabular}[c]{@{}c@{}}Contro-\\ lled Bus\\ No.\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Contro-\\ lled Side\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Tap\\ Posit-\\ ions\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Control\\ Mode\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Auto\\ Adjust\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Specified\\ R (pu)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Specified\\ X (pu)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Rate1\\ (MVA)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Winding\\ Base\\ (MVA)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Rmax\\ (pu)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Rmin\\ (pu)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Vmax\\ (pu)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Vmin\\ (pu)\end{tabular}} \\ \hline &&&&&&&&&&&&&&&\\[-1em]
@@ -436,6 +437,7 @@ To fully define the model of the power system we are provided with seven tables:
 300       & 320       & 1         & 300       & Tapped    & 15        & Voltage   & Yes       & 0.005     & 0.13      & 75        & 75        & 1.10      & 0.90      & 1.045     & 1.025     \\ \hline &&&&&&&&&&&&&&&\\[-1em]
 300       & 330       & 1         & 300       & Tapped    & 15        & Voltage   & Yes       & 0.005     & 0.13      & 75        & 75        & 1.10      & 0.90      & 1.045     & 1.025     \\ \hline
 \end{tabular}
+\end{adjustwidth}
 \end{table}
 
 \end{landscape}
